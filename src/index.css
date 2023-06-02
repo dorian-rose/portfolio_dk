@@ -7,3 +7,13 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+.heroHeight {
+  height: calc(100vh - 94px);
+}
+
+@media (min-width: 640px) {
+  .heroHeight {
+    height: calc(100vh - 120px);
+  }
+}
