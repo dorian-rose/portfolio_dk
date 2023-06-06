@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
+import linkedin from "../assets/linkedin.svg";
 
 export const ContactPage = () => {
   const [sending, setSending] = useState(false);
@@ -57,8 +58,11 @@ export const ContactPage = () => {
         </>
       ) : successMessage == "" ? (
         <>
+          <h2 className="font-light tracking-widest mt-10 mx-8 text-xl sm:text-4xl text-center text-primary">
+            Send me a message
+          </h2>
           <form
-            className="w-4/5 my-10 m-auto border border-primary border-1 rounded-md p-5 max-w-md"
+            className="w-4/5 mb-10 mt-5 m-auto border border-primary border-1 rounded-md p-5 max-w-md"
             onSubmit={handleSubmit((data) => sendEmail(data))}
             ref={form}
             //onSubmit={sendEmail}
@@ -147,6 +151,53 @@ export const ContactPage = () => {
           </>
         </>
       )}
+      <h2 className="font-light tracking-widest mt-16 mx-8 text-xl sm:text-4xl text-center text-primary">
+        Or contact me here:
+      </h2>
+      <div className="flex justify-center mt-5">
+        <a
+          className=" w-12 p-2 bg-background rounded-3xl"
+          title="Dorian's LinkedIn profile"
+          href="https://www.linkedin.com/in/dorian-kelly-0785b0204/"
+          target="_blank"
+        >
+          <img src={linkedin} alt="linked in logo" />
+        </a>
+        <a
+          className="font-light tracking-wide text-center relative top-1/2 translate-y-1/4 underline hover:text-primary"
+          title="Dorian's LinkedIn profile"
+          href="https://www.linkedin.com/in/dorian-kelly-0785b0204/"
+          target="_blank"
+        >
+          www.linkedin.com/in/dorian-kelly
+        </a>
+      </div>
+      <div className="flex justify-center mt-5">
+        <a
+          className=" w-12 py-2 ps-3 bg-background rounded-3xl text-primary"
+          title="Dorian's LinkedIn profile"
+          href="https://www.linkedin.com/in/dorian-kelly-0785b0204/"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6"
+          >
+            <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+            <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+          </svg>
+        </a>
+        <a
+          className="font-light tracking-wide text-center relative top-1/2 translate-y-1/4 underline hover:text-primary"
+          title="Dorian's LinkedIn profile"
+          href="https://www.linkedin.com/in/dorian-kelly-0785b0204/"
+          target="_blank"
+        >
+          www.linkedin.com/in/dorian-kelly
+        </a>
+      </div>
     </div>
   );
 };
