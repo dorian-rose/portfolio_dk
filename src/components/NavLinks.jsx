@@ -18,38 +18,38 @@ export const NavLinks = () => {
         </li>
         <li className="py-1 md:py-0">
           <NavLink
-            to="/"
+            to="/about"
             className={({ isActive }) =>
               `nav-link ${
                 isActive ? "text-primary font-normal" : ""
               } m-2 font-thin hover:text-primary`
             }
           >
-            Home
+            About Me
           </NavLink>
         </li>
         <li className="py-1 md:py-0">
           <NavLink
-            to="/"
+            to="/projects"
             className={({ isActive }) =>
               `nav-link ${
                 isActive ? "text-primary font-normal" : ""
               } m-2 font-thin hover:text-primary`
             }
           >
-            Home
+            Projects
           </NavLink>
         </li>
         <li className="py-1 md:py-0">
           <NavLink
-            to="/"
+            to="/contact"
             className={({ isActive }) =>
               `nav-link ${
                 isActive ? "text-primary font-normal" : ""
               } m-2 font-thin hover:text-primary`
             }
           >
-            Home
+            Contact
           </NavLink>
         </li>
       </ul>
