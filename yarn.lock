@@ -278,6 +278,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^3.11.0":
+  version: 3.11.0
+  resolution: "@emailjs/browser@npm:3.11.0"
+  checksum: fdeb780f49ed5ee75ad2d197ae2fcc77c266dcffe1204b6450d01df7db2e9a17d12af97a460eaf33f777c569935aa83285c184d63c59c03387a2c326e90ba5e9
+  languageName: node
+  linkType: hard
+
 "@esbuild/android-arm64@npm:0.17.19":
   version: 0.17.19
   resolution: "@esbuild/android-arm64@npm:0.17.19"
@@ -2874,6 +2881,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio_dk@workspace:."
   dependencies:
+    "@emailjs/browser": ^3.11.0
     "@types/react": ^18.0.37
     "@types/react-dom": ^18.0.11
     "@vitejs/plugin-react": ^4.0.0
@@ -2885,6 +2893,7 @@ __metadata:
     postcss: ^8.4.24
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-hook-form: ^7.44.3
     react-iframe: ^1.8.5
     react-router-dom: ^6.11.2
     tailwindcss: ^3.3.2
@@ -3031,6 +3040,15 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-hook-form@npm:^7.44.3":
+  version: 7.44.3
+  resolution: "react-hook-form@npm:7.44.3"
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  checksum: 8dc97e705d28d842c60fd79b0f07b8b045c458c234e3bf422baab87a844d0ebecbdf3e349538eaaa5c12366cd85169f60a52ed84dd31cdd99729899e424548bf
   languageName: node
   linkType: hard
 

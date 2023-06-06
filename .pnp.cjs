@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@emailjs/browser", "npm:3.11.0"],\
             ["@types/react", "npm:18.2.7"],\
             ["@types/react-dom", "npm:18.2.4"],\
             ["@vitejs/plugin-react", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:4.0.0"],\
@@ -39,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.24"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:18.2.0"],\
+            ["react-hook-form", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:7.44.3"],\
             ["react-iframe", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:1.8.5"],\
             ["react-router-dom", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:6.11.2"],\
             ["tailwindcss", "npm:3.3.2"],\
@@ -382,6 +384,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-string-parser", "npm:7.21.5"],\
             ["@babel/helper-validator-identifier", "npm:7.19.1"],\
             ["to-fast-properties", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@emailjs/browser", [\
+        ["npm:3.11.0", {\
+          "packageLocation": "./.yarn/cache/@emailjs-browser-npm-3.11.0-3a580335bf-fdeb780f49.zip/node_modules/@emailjs/browser/",\
+          "packageDependencies": [\
+            ["@emailjs/browser", "npm:3.11.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3360,6 +3371,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["portfolio_dk", "workspace:."],\
+            ["@emailjs/browser", "npm:3.11.0"],\
             ["@types/react", "npm:18.2.7"],\
             ["@types/react-dom", "npm:18.2.4"],\
             ["@vitejs/plugin-react", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:4.0.0"],\
@@ -3371,6 +3383,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.24"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:18.2.0"],\
+            ["react-hook-form", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:7.44.3"],\
             ["react-iframe", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:1.8.5"],\
             ["react-router-dom", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:6.11.2"],\
             ["tailwindcss", "npm:3.3.2"],\
@@ -3608,6 +3621,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
             ["scheduler", "npm:0.23.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-hook-form", [\
+        ["npm:7.44.3", {\
+          "packageLocation": "./.yarn/cache/react-hook-form-npm-7.44.3-3c215d9a9a-8dc97e705d.zip/node_modules/react-hook-form/",\
+          "packageDependencies": [\
+            ["react-hook-form", "npm:7.44.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:7.44.3", {\
+          "packageLocation": "./.yarn/__virtual__/react-hook-form-virtual-815a614c58/0/cache/react-hook-form-npm-7.44.3-3c215d9a9a-8dc97e705d.zip/node_modules/react-hook-form/",\
+          "packageDependencies": [\
+            ["react-hook-form", "virtual:b2e8c9addd8042c1219cc5ec93d3f26df77108fda59dac1dc055a2e5cf0ec7e9d242fa6781967dde3a68c895f8fa69e68e96bd0d67bbc8aaa3b2786e21bb4964#npm:7.44.3"],\
+            ["@types/react", "npm:18.2.7"],\
+            ["react", "npm:18.2.0"]\
           ],\
           "packagePeers": [\
             "@types/react",\
