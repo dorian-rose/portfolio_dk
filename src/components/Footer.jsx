@@ -6,12 +6,12 @@ import github from "../assets/github.svg";
 export const Footer = () => {
   return (
     <footer className="mt-28">
-      <div className=" my-5 bg-background p-2 flex justify-between">
+      <div className=" my-5 bg-background p-2 grid grid-cols-2">
         <div>
-          <h4 className="text-xl sm:text-2xl font-light tracking-wide font-medium mx-10 mt-10 mb-3">
+          <h4 className="text-xl sm:text-2xl text-center font-light tracking-wide font-medium mt-10 ">
             Work Inquiry
           </h4>
-          <p className="font-thin mx-10 mb-10">Let's collaborate</p>
+          <p className="font-thin mb-10 text-center">Let's collaborate</p>
         </div>
         <ContactButton />
       </div>
