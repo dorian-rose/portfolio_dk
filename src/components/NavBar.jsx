@@ -1,5 +1,6 @@
 import logo from "../assets/logo.svg";
 import { useState } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Hamburger } from "./Hamburger";
 import { NavLinks } from "./NavLinks";
@@ -8,12 +9,21 @@ export const NavBar = () => {
   const location = useLocation();
   const [background, setBackground] = useState("");
   const [menuHidden, setMenuHidden] = useState("hidden");
+
+  useEffect(() => {
+    collapseNavbar();
+  }, [location]);
+
   const changeDisplay = () => {
     if (menuHidden == "block") {
       setMenuHidden("hidden");
     } else {
       setMenuHidden("block");
     }
+  };
+
+  const collapseNavbar = () => {
+    setMenuHidden("hidden");
   };
 
   return (

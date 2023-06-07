@@ -11,6 +11,9 @@
 .heroHeight {
   height: calc(100vh - 94px);
 }
+.w-96 {
+  width: 96%;
+}
 
 @media (min-width: 640px) {
   .heroHeight {
