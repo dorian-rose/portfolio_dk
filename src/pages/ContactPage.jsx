@@ -39,7 +39,7 @@ export const ContactPage = () => {
     setSuccessMessage("");
   };
   return (
-    <div>
+    <section>
       <h1 className="font-light tracking-widest mt-4 mx-8 text-2xl sm:text-4xl text-center text-primary">
         Get in touch
       </h1>
@@ -198,6 +198,6 @@ export const ContactPage = () => {
           www.linkedin.com/in/dorian-kelly
         </a>
       </div>
-    </div>
+    </section>
   );
 };
