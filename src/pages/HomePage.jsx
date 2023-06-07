@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { NavBar } from "../components/NavBar";
 import { ContactButton } from "../components/ContactButton";
@@ -10,24 +10,48 @@ import { Footer } from "../components/Footer";
 import { Stacks } from "../components/Stacks";
 
 export const HomePage = () => {
+  const info = useRef(null);
+  const scrollToInfo = () => {
+    info.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <section>
         <article className="heroHeight mb-5 bg-background ">
-          <div className="relative top-1/2 -translate-y-2/3">
+          <div className="relative top-1/2 -translate-y-2/3 pt-16">
             <p className="text-center font-thin">Hi, I'm</p>
-            <h1 className="m-10 font-light tracking-widest text-5xl sm:text-7xl text-center">
+            <h1 className="sm:m-10 m-6 font-light tracking-widest text-3xl sm:text-5xl md:text-7xl text-center">
               Dorian Kelly
             </h1>
-            <h2 className="font-light tracking-widest mt-4 mx-8 text-2xl sm:text-4xl text-center">
+            <h2 className="font-light tracking-widest mt-4 mx-8 text-xl sm:text-2xl sm:text-4xl text-center">
               Full-stack developer based in Spain
             </h2>
             <Stacks />
             <ContactButton />
+            <button
+              onClick={scrollToInfo}
+              className="block m-auto mt-5 font-thin tracking-wide w-fit py-1 px-2  text-primary rounded-md px-2 hover:shadow-lg"
+            >
+              <p>See more</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6 m-auto"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
         </article>
 
-        <p className="text-center font-thin mt-8">Featured Projects</p>
+        <p ref={info} className="text-center font-thin pt-8">
+          Featured Projects
+        </p>
         <article className="grid sm:grid-cols-2 m-6">
           <div className="hidden sm:block bg-background mx-10 rounded-lg">
             <a
