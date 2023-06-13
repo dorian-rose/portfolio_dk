@@ -16,13 +16,14 @@ export const AboutPage = () => {
               myself. I am a passionate and driven full stack web developer
               specializing in the MERN/PERN stack. With a strong command of
               Mongo, SQL, Express.js, React.js, and Node.js, I have successfully
-              developed both the front and back ends of various applications,
-              guiding them from inception to deployment. Building Restful APIs
-              and emphasizing web semantics for optimal SEO and accessibility
-              are core principles that I deeply value. Additionally, I have a
-              proven track record of adhering to best practices in documentation
-              and version control, ensuring seamless collaboration and efficient
-              project management.
+              developed both the front and back ends, including Rest APIs, of
+              various applications, guiding them from inception to deployment.
+              In the frontend, utilisation of web semantics for optimal SEO and
+              accessibility are principles that I value, and I strive for
+              pixel-perfect replication of wireframes when implementing the
+              styling of a page. Additionally, I have a proven track record of
+              adhering to best practices in documentation and version control,
+              ensuring seamless collaboration and efficient project management.
             </p>
             <p className="mt-4 font-thin">
               Alongside my technical expertise, I bring eight years of
