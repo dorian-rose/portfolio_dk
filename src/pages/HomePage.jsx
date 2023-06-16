@@ -77,29 +77,36 @@ export const HomePage = () => {
               supplied figma views and implementation of requested
               functionalities. The project also included collaboration with a
               team of data scientists and compliance with the recommendations of
-              the cybersecurity team. Front end build with react.js, back end
-              build with node express.js.
+              the cybersecurity team. Front end is built with react.js, also
+              utilising leaflet, chart.js and more, and the back end is built
+              with node express.js.
             </p>
             <ProjectButton url="https://h20h.netlify.app/" />
           </div>
         </article>
         <article className="grid sm:grid-cols-2 my-10 mx-6">
-          <div className="my-3 ms-5 sm:ms-10 relative md:top-1/2  md:-translate-y-1/4">
+          <div className="my-3 ms-5 sm:ms-10 relative md:top-1/2  md:-translate-y-1/3">
             <h2 className="text-2xl font-light tracking-wide">
               Product swap site
             </h2>
             <p className="font-thin text-sm mt-4 mb-8 me-2 ">
               A site for listing unwanted items, or gaining an item on offer
               from another user. The frontend is built with react.js utilizing
-              hooks and redux, the backend is built with node express.js, and
-              the database used is Postgres Elephant (SQL). User authentication
-              managed with Auth0.
+              hooks and redux, the backend is built with node express.js. The
+              database used is Postgres Elephant (SQL), allowing for the user,
+              role and product tables to be related. User authentication managed
+              with Auth0. <br className="mt-2" />
+              The application has three levels of user roles: unregistered user
+              (view only), registered user (add and manage items, contact other
+              users) and site administrator (monitor and delete all product
+              entries and users). The different access/views allowed for each
+              level are protected.
             </p>
-            <ProjectButton url="https://heroic-torrone-368c8a.netlify.app" />
+            <ProjectButton url="https://gumtree-swap.netlify.app/" />
           </div>
           <div className="hidden sm:block bg-background mx-10 rounded-lg">
             <a
-              href="https://heroic-torrone-368c8a.netlify.app"
+              href="https://gumtree-swap.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >

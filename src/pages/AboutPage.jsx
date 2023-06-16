@@ -59,7 +59,7 @@ export const AboutPage = () => {
         <Experience />
       </section>
       <section>
-        <article className="my-10 font-thin mx-12 text-center ">
+        <article className="my-10 pt-8 font-thin mx-12 text-center border-t border-primary">
           I am passionate about continuous learning and growth as a developer.
           With my technical aptitude, collaborative mindset, and rich
           professional background, I am committed to taking on new and exciting
