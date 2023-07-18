@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { NavBar } from "../components/NavBar";
 import { ContactButton } from "../components/ContactButton";
 import productSwap from "../assets/productSwap.png";
+import blog from "../assets/blog.png";
 import h2oh from "../assets/h2oh.png";
-import worldClock from "../assets/worldClock.png";
+
 import { ProjectButton } from "../components/ProjectButton";
 import { Footer } from "../components/Footer";
 import { Stacks } from "../components/Stacks";
@@ -55,7 +56,7 @@ export const HomePage = () => {
         <article className="grid sm:grid-cols-2 m-6">
           <div className="hidden sm:block bg-background mx-10 rounded-lg">
             <a
-              href="https://flourishing-sable-f526bd.netlify.app"
+              href="https://h20h.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -121,6 +122,35 @@ export const HomePage = () => {
         <article className="grid sm:grid-cols-2 m-6">
           <div className="hidden sm:block bg-background mx-10 rounded-lg">
             <a
+              href="https://blog-project-frontend.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="block m-auto text-center rounded-lg my-5"
+                src={blog}
+                alt="image of a blog web application showing the headign 'News!', text, and a features latest story about travel in Vietnam accompanied by a photo of terraced rice fields "
+              />
+            </a>
+          </div>
+
+          <div className="my-3 ms-5 relative md:top-1/2  md:-translate-y-1/4">
+            <h2 className="text-2xl font-light tracking-wide">
+              Multi-author blog site
+            </h2>
+            <p className="font-thin text-sm mt-4 mb-8 me-10">
+              A blog website where authors can log in and post articles. Authors
+              can edit or delete their entries, and unregistered site visitors
+              can search and read articles. This site was an exercise in Node.js
+              Express; both the back and front end are made using this framework
+              , the front using ejs template engine to create views.
+            </p>
+            <ProjectButton url="https://world-clock-dorian-kelly.netlify.app/" />
+          </div>
+        </article>
+        {/* <article className="grid sm:grid-cols-2 m-6">
+          <div className="hidden sm:block bg-background mx-10 rounded-lg">
+            <a
               href="https://world-clock-dorian-kelly.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -144,7 +174,7 @@ export const HomePage = () => {
             </p>
             <ProjectButton url="https://world-clock-dorian-kelly.netlify.app/" />
           </div>
-        </article>
+        </article> */}
       </section>
     </>
   );
