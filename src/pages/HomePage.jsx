@@ -145,7 +145,7 @@ export const HomePage = () => {
               Express; both the back and front end are made using this framework
               , the front using ejs template engine to create views.
             </p>
-            <ProjectButton url="https://world-clock-dorian-kelly.netlify.app/" />
+            <ProjectButton url="https://blog-project-frontend.onrender.com/" />
           </div>
         </article>
         {/* <article className="grid sm:grid-cols-2 m-6">
