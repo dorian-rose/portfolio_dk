@@ -50,7 +50,10 @@ export const HomePage = () => {
           </div>
         </article>
 
-        <p ref={info} className="text-center font-thin pt-8">
+        <p
+          className="font-thin tracking-widest pt-8 sm:py-8 text-primary text-xl sm:text-2xl md:text-3xl text-center"
+          ref={info}
+        >
           Featured Projects
         </p>
         <article className="grid sm:grid-cols-2 m-6">
@@ -122,7 +125,7 @@ export const HomePage = () => {
         <article className="grid sm:grid-cols-2 m-6">
           <div className="hidden sm:block bg-background mx-10 rounded-lg">
             <a
-              href="https://blog-project-frontend.onrender.com/"
+              href="https://blog-dk-e24eedc7b082.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -145,7 +148,7 @@ export const HomePage = () => {
               Express; both the back and front end are made using this framework
               , the front using ejs template engine to create views.
             </p>
-            <ProjectButton url="https://blog-project-frontend.onrender.com/" />
+            <ProjectButton url="https://blog-dk-e24eedc7b082.herokuapp.com/" />
           </div>
         </article>
         {/* <article className="grid sm:grid-cols-2 m-6">
