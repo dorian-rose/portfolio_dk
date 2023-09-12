@@ -7,7 +7,7 @@ import { NavLinks } from "./NavLinks";
 
 export const NavBar = () => {
   const location = useLocation();
-  const [background, setBackground] = useState("");
+
   const [menuHidden, setMenuHidden] = useState("hidden");
 
   useEffect(() => {
@@ -29,12 +29,16 @@ export const NavBar = () => {
   return (
     <nav
       className={` pt-4 pb-10 ${
-        location.pathname === "/" ? "bg-background " : ""
+        location.pathname === "/contact"
+          ? "max-w-2xl m-auto"
+          : location.pathname === "/"
+          ? "max-w-4xl m-auto"
+          : "max-w-none m-auto md:mx-28"
       }`}
     >
-      <div className="w-12">
+      <div className="w-16 start-16 relative top-12">
         <img
-          className="w-16 start-10 absolute top-10 "
+          className="w-16 "
           src={logo}
           alt="Dorian Kelly Web Development logo"
         />
