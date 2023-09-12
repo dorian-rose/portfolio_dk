@@ -7,7 +7,6 @@ import { NavLinks } from "./NavLinks";
 
 export const NavBar = () => {
   const location = useLocation();
-
   const [menuHidden, setMenuHidden] = useState("hidden");
 
   useEffect(() => {
@@ -31,8 +30,6 @@ export const NavBar = () => {
       className={` pt-4 pb-10 ${
         location.pathname === "/contact"
           ? "max-w-2xl m-auto"
-          : location.pathname === "/"
-          ? "max-w-4xl m-auto"
           : "max-w-none m-auto md:mx-28"
       }`}
     >
