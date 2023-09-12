@@ -18,9 +18,9 @@ export const HomePage = () => {
   return (
     <>
       <section>
-        <article className="heroHeight mb-5 bg-background ">
-          <div className="relative top-1/2 -translate-y-2/3 pt-16">
-            <p className="text-center font-thin xl:mt-32">Hi, I'm</p>
+        <article className="heroHeight bg-background">
+          <div className="relative top-1/2 -translate-y-1/2">
+            <p className="text-center font-thin ">Hi, I'm</p>
             <h1 className="sm:m-10 m-6  font-light tracking-widest text-3xl sm:text-5xl md:text-7xl text-center">
               Dorian Kelly
             </h1>
