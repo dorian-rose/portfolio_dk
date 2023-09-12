@@ -7,6 +7,7 @@ import { NavLinks } from "./NavLinks";
 
 export const NavBar = () => {
   const location = useLocation();
+
   const [menuHidden, setMenuHidden] = useState("hidden");
 
   useEffect(() => {
