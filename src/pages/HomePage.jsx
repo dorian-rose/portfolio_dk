@@ -7,7 +7,7 @@ import blog from "../assets/blog.png";
 import h2oh from "../assets/h2oh.png";
 
 import { ProjectButton } from "../components/ProjectButton";
-import { Footer } from "../components/Footer";
+
 import { Stacks } from "../components/Stacks";
 
 export const HomePage = () => {
@@ -20,8 +20,8 @@ export const HomePage = () => {
       <section>
         <article className="heroHeight mb-5 bg-background ">
           <div className="relative top-1/2 -translate-y-2/3 pt-16">
-            <p className="text-center font-thin">Hi, I'm</p>
-            <h1 className="sm:m-10 m-6 font-light tracking-widest text-3xl sm:text-5xl md:text-7xl text-center">
+            <p className="text-center font-thin xl:mt-32">Hi, I'm</p>
+            <h1 className="sm:m-10 m-6  font-light tracking-widest text-3xl sm:text-5xl md:text-7xl text-center">
               Dorian Kelly
             </h1>
             <h2 className="font-light tracking-widest mt-4 mx-8 text-xl sm:text-2xl sm:text-4xl text-center">
@@ -31,7 +31,7 @@ export const HomePage = () => {
             <ContactButton />
             <button
               onClick={scrollToInfo}
-              className="block m-auto mt-5 font-thin tracking-wide w-fit py-1 px-2  text-primary rounded-md px-2 hover:shadow-lg"
+              className="block m-auto mt-5 xl:mt-10 2xl:mt-20 font-thin tracking-wide w-fit py-1 px-2  text-primary rounded-md px-2 hover:shadow-lg"
             >
               <p>See more</p>
               <svg

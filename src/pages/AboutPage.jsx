@@ -5,7 +5,7 @@ import { Experience } from "../components/Experience";
 export const AboutPage = () => {
   return (
     <>
-      <section className="grid md:grid-cols-2 lg:grid-cols-3">
+      <section className="grid md:grid-cols-2 lg:grid-cols-3 sm:mx-10 lg:mx-20">
         <article className="lg:col-span-2">
           <div className="mx-8 relative top-1/2 -translate-y-1/2 text-center">
             <h1 className="md:mt-8 font-light tracking-widest mb-4 sm:mb-10 md:mb-4 text-2xl sm:text-4xl text-primary ">
@@ -54,11 +54,11 @@ export const AboutPage = () => {
           />
         </div>
       </section>
-      <section>
+      <section className="sm:mx-10 lg:mx-20">
         <Education />
         <Experience />
       </section>
-      <section>
+      <section className="sm:mx-10 lg:mx-20">
         <article className="my-10 pt-8 font-thin mx-12 text-center border-t border-primary">
           I am passionate about continuous learning and growth as a developer.
           With my technical aptitude, collaborative mindset, and rich
