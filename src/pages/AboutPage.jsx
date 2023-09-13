@@ -15,7 +15,7 @@ export const AboutPage = () => {
               Hello, and thank you for visiting my website! Let me introduce
               myself. I am a passionate and driven full stack web developer
               specializing in the MERN/PERN stack. With a strong command of
-              Mongo, SQL, Express.js, React.js, and Node.js, I have successfully
+              MongoDB, SQL, Express.js, React.js, and Node.js, I have successfully
               developed both the front and back ends, including Rest APIs, of
               various applications, guiding them from inception to deployment.
               In the frontend, utilisation of web semantics for optimal SEO and

@@ -29,11 +29,7 @@ export const NavBar = () => {
   return (
     <nav
       className={` pt-4 pb-10 ${
-        location.pathname === "/contact"
-          ? "max-w-2xl m-auto"
-          : location.pathname === "/"
-          ? "max-w-4xl m-auto"
-          : "md:mx-28"
+        location.pathname === "/contact" ? "max-w-2xl m-auto" : "md:mx-28"
       }`}
     >
       <div className="w-16 start-16 relative top-12">

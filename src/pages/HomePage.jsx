@@ -19,12 +19,13 @@ export const HomePage = () => {
     <>
       <section>
         <article className="heroHeight bg-background">
-          <div className="relative top-1/2 -translate-y-1/2">
+          <div className="relative top-1/2 -translate-y-1/2 pb-20 ">
+            {/* <div className="absolute heroPosition left-1/2 -translate-x-1/2"> */}
             <p className="text-center font-thin ">Hi, I'm</p>
-            <h1 className="sm:m-10 m-6  font-light tracking-widest text-3xl sm:text-5xl md:text-7xl text-center">
+            <h1 className="sm:m-10 m-6  font-light tracking-widest text-3xl sm:text-4xl md:text-6xl text-center">
               Dorian Kelly
             </h1>
-            <h2 className="font-light tracking-widest mt-4 mx-8 text-xl sm:text-2xl sm:text-4xl text-center">
+            <h2 className="font-light tracking-widest mt-4 mx-8 text-xl sm:text-2xl md:text-4xl text-center">
               Full-stack developer based in Spain
             </h2>
             <Stacks />

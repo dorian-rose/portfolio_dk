@@ -8,7 +8,7 @@ export const ProjectPage = () => {
         Projects
       </h1>
 
-      <div className="sm:mx-10">
+      <div className="sm:mx-10 mt-3 sm:mt-20">
         {projects.map((project) => (
           <>
             <ProjectCard key={project.title} project={project} />

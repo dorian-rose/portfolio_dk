@@ -7,7 +7,7 @@ import jest from "../assets/jest.png";
 
 export const Stacks = () => {
   return (
-    <div className="grid grid-cols-6 w-3/4 block m-auto my-7 sm:my-10 md:my-14 max-w-4xl">
+    <div className="grid grid-cols-6 w-3/4 block m-auto my-7 sm:my-10 md:my-10 max-w-4xl">
       <div className="m-4 w-12 sm:w-20 m-auto">
         <img className=" w-3/4 m-auto" src={node} alt="node.js logo" />
       </div>
