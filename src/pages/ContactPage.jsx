@@ -25,7 +25,7 @@ export const ContactPage = () => {
       form.current,
       "dIsBZi0TLrlkL1irS"
     );
-    console.log(response);
+    console.log("response", response);
     if (response.text == "OK") {
       setSuccessMessage("Message sent successfully!");
     } else {
@@ -58,7 +58,7 @@ export const ContactPage = () => {
         </>
       ) : successMessage == "" ? (
         <>
-          <h2 className="font-light tracking-widest mt-10 mx-8 text-xl sm:text-4xl text-center text-primary">
+          <h2 className="font-light tracking-widest mt-10 mx-8 text-xl sm:text-2xl text-center text-primary">
             Send me a message
           </h2>
           <form
@@ -151,7 +151,7 @@ export const ContactPage = () => {
           </>
         </>
       )}
-      <h2 className="font-light tracking-widest mt-16 mx-8 text-xl sm:text-4xl text-center text-primary">
+      <h2 className="font-light tracking-widest mt-16 mx-8 text-xl sm:text-2xl text-center text-primary">
         Or contact me here:
       </h2>
       <div className="flex justify-center mt-5">
@@ -175,15 +175,15 @@ export const ContactPage = () => {
       <div className="flex justify-center mt-5">
         <a
           className=" w-12 py-2 ps-3 bg-background rounded-3xl text-primary"
-          title="Dorian's LinkedIn profile"
-          href="https://www.linkedin.com/in/dorian-kelly-0785b0204/"
+          title="email Dorian Kelly"
+          href="mailto:dorianrkelly@gmail.com"
           target="_blank"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-6 h-6"
+            className="w-7 h-7"
           >
             <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
             <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
@@ -191,11 +191,11 @@ export const ContactPage = () => {
         </a>
         <a
           className="font-light tracking-wide text-center relative top-1/2 translate-y-1/4 underline hover:text-primary"
-          title="Dorian's LinkedIn profile"
-          href="https://www.linkedin.com/in/dorian-kelly-0785b0204/"
+          title="email Dorian"
+          href="mailto:dorianrkelly@gmail.com"
           target="_blank"
         >
-          www.linkedin.com/in/dorian-kelly
+          dorianrkelly@gmail.com
         </a>
       </div>
     </section>
