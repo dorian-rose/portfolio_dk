@@ -57,7 +57,7 @@ export const HomePage = () => {
         >
           Featured Projects
         </p>
-        <article className="grid sm:grid-cols-2 m-6">
+        {/* <article className="grid sm:grid-cols-2 m-6">
           <div className="hidden sm:block bg-background mx-10 rounded-lg">
             <a
               href="https://h20h.netlify.app/"
@@ -88,7 +88,7 @@ export const HomePage = () => {
             </p>
             <ProjectButton url="https://h20h.netlify.app/" />
           </div>
-        </article>
+        </article> */}
         <article className="grid sm:grid-cols-2 my-10 mx-6">
           <div className="my-3 ms-5 sm:ms-10 relative md:top-1/2  md:-translate-y-1/3">
             <h2 className="text-2xl font-light tracking-wide">
