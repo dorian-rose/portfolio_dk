@@ -2,6 +2,7 @@ import productSwapSmall from "../assets/productSwapSmall.png"
 import h2ohSmall from "../assets/h2ohSmall.png"
 import blogSmall from "../assets/blogSmall.png"
 import toDoSmall from "../assets/toDoSmall.png"
+import toDoTs from "../assets/toDoTs.png"
 
 
 export const projects = [
@@ -22,13 +23,20 @@ The application has three levels of user roles: unregistered user (view only), r
         stack: "Javascript, React.js, MongoDB, Node.js Express, Firebase"
     }, {
         id: 3,
+        title: "To Do App v2",
+        description: `An alternate, simpler to do app created using TypeScript in React.js and local storage`,
+        image: toDoTs,
+        link: "https://todo-dorian-ts.netlify.app/",
+        stack: "TypeScript, React.js"
+    }, {
+        id: 4,
         title: "H2Oh Políticas azules",
         description: `This project consisted of building the arquitecture for a product designed by a user experience team, including exact replication of supplied figma views and implementation of requested functionalities. The project also included collaboration with a team of data scientists and compliance with the recommendations of the cybersecurity team. Front end is built with react.js, also utilising leaflet, chart.js and more, and the back end is built with node express.js.`,
         image: h2ohSmall,
         link: "https://h20h.netlify.app/",
         stack: "Javascript, React.js, MongoDB, Node.js Express, Auth0"
     }, {
-        id: 4,
+        id: 5,
         title: "News Blog",
         description: "A blog website where authors can log in and post articles. Authors can edit or delete their entries, and unregistered site visitors can search and read articles. Author login and authetication is managed with JWT. This site was an exercise in Node.js Express; both the back and front end are made using this framework , the front using the ejs template engine to create views.",
         image: blogSmall,
