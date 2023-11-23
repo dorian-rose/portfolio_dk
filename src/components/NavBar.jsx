@@ -34,7 +34,7 @@ export const NavBar = () => {
     >
       <div className="w-16 start-16 relative top-12">
         <img
-          className="w-16 "
+          className="w-16 z-40 "
           src={logo}
           alt="Dorian Kelly Web Development logo"
         />
