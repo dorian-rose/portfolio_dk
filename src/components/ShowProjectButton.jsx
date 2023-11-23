@@ -2,17 +2,17 @@ import React from "react";
 
 export const ShowProjectButton = ({ display, setDisplay, title, stack }) => {
   return (
-    <div className="grid md:grid-cols-2">
+    <div className="grid md:grid-cols-2 ">
       <button
         onClick={
           display == "hidden"
             ? () => setDisplay("")
             : () => setDisplay("hidden")
         }
-        className="block mt-1 lg:mt-5  ps-4 sm:pe-5 md:pe-8 lg:pe-20 py-2 w-full font-thin flex md:justify-between"
+        className=" mt-1 lg:mt-5 py-2 w-full font-thin flex justify-between"
       >
         <h2
-          className={`text-sm sm:text-base font-light tracking-wide text-left me-3 sm:me-5 lg:me-10 ${
+          className={`text-primary sm:text-lg font-light tracking-wide text-left me-5 sm:me-5 lg:me-10 ${
             display === "hidden" && "relative top-1/2 -translate-y-1/2"
           }`}
         >
@@ -59,7 +59,9 @@ export const ShowProjectButton = ({ display, setDisplay, title, stack }) => {
       <div className="italic sm:mt-3 lg:mt-7 font-thin text-primary w-fit">
         <p
           className={`${
-            display === "hidden" ? "ms-2 text-xs lg:text-base mb-1" : "hidden"
+            display === "hidden"
+              ? "md:ms-2 text-xs lg:text-base mt-2 sm:mt-0 md:mt-2  mb-6 md:mb-0"
+              : "hidden"
           } `}
         >
           {stack}
