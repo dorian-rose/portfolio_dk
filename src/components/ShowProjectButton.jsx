@@ -9,7 +9,7 @@ export const ShowProjectButton = ({ display, setDisplay, title, stack }) => {
             ? () => setDisplay("")
             : () => setDisplay("hidden")
         }
-        className=" mt-1 lg:mt-5 py-2 w-full font-thin flex justify-between md:justify-start"
+        className=" mt-1 lg:mt-5 py-2 w-full font-thin flex justify-between "
       >
         <h2
           className={`text-primary sm:text-lg font-light tracking-wide text-left me-5 sm:me-5 lg:me-10 ${
@@ -37,7 +37,7 @@ export const ShowProjectButton = ({ display, setDisplay, title, stack }) => {
             </svg>
           </div>
         ) : (
-          <div className="flex hover:pointer relative top-1/2 -translate-y-1/2 md:ms-5">
+          <div className="flex hover:pointer relative top-1/2 -translate-y-1/2 sm:me-20 md:me-10 lg:me-28 xl:me-56">
             <p className="text-xs lg:text-sm mt-1 me-1 text-primary hover:underline">
               View more
             </p>
