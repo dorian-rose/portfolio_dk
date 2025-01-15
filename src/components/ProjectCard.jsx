@@ -28,7 +28,7 @@ export const ProjectCard = ({ project, gridReverse }) => {
               target="_blank"
               rel="noopener noreferrer"
               // className={`${display} flex  `}
-              className="flex md:flex-row-reverse md:relative md:top-1/2 md:-translate-y-1/2"
+              className="flex md:flex-row-reverse md:relative md:top-1/2 md:-translate-y-1/2 py-9"
             >
               <div className="p-2 rounded-full h-40 w-full hover:shadow  bg-background ">
                 <img
