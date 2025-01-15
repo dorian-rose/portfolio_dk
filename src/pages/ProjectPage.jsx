@@ -8,9 +8,13 @@ export const ProjectPage = () => {
         Projects
       </h1>
 
-      <div className="mx-10 mt-10 sm:mt-20 ">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+      <div className="mx-10 mt-10 sm:mt-20 flex flex-col gap-10 md:gap-16">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={project.id}z
+            project={project}
+            gridReverse={index % 2 === 1}
+          />
         ))}
       </div>
     </section>

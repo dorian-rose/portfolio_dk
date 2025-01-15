@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { NavBar } from "../components/NavBar";
+import { HomeProjectCard } from "../components/HomeProjectCard";
+import { projects } from "../components/projectInfo";
 import { ContactButton } from "../components/ContactButton";
 import productSwap from "../assets/productSwap.png";
 import blog from "../assets/blog.png";
@@ -51,134 +53,21 @@ export const HomePage = () => {
           </div>
         </article>
 
-        <p
+        <h3
           className="font-thin tracking-widest pt-8 sm:py-8 text-primary text-xl sm:text-2xl md:text-3xl text-center"
           ref={info}
         >
           Featured Projects
-        </p>
-        {/* <article className="grid sm:grid-cols-2 m-6">
-          <div className="hidden sm:block bg-background mx-10 rounded-lg">
-            <a
-              href="https://h20h.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="block m-auto text-center rounded-lg my-5"
-                src={h2oh}
-                alt="image of the h20h web application showing a question and multiple choice answers on blue text areas"
-              />
-            </a>
-          </div>
-
-          <div className="my-3 ms-5 relative md:top-1/2  md:-translate-y-1/4">
-            <h2 className="text-2xl font-light tracking-wide">
-              H2Oh Políticas azules
-            </h2>
-            <p className="font-thin text-sm mt-4 mb-8 me-10">
-              This project consisted of building the arquitecture for a product
-              designed by a user experience team, including exact replication of
-              supplied figma views and implementation of requested
-              functionalities. The project also included collaboration with a
-              team of data scientists and compliance with the recommendations of
-              the cybersecurity team. Front end is built with react.js, also
-              utilising leaflet, chart.js and more, and the back end is built
-              with node express.js.
-            </p>
-            <ProjectButton url="https://h20h.netlify.app/" />
-          </div>
-        </article> */}
-        <article className="grid sm:grid-cols-2 my-10 mx-6">
-          <div className="my-3 ms-5 sm:ms-10 relative md:top-1/2  md:-translate-y-1/3">
-            <h2 className="text-2xl font-light tracking-wide">
-              Product swap site
-            </h2>
-            <p className="font-thin text-sm mt-4 mb-8 me-2 ">
-              A site for listing unwanted items, or gaining an item on offer
-              from another user. The frontend is built with react.js utilizing
-              hooks and redux, the backend is built with node express.js. The
-              database used is Postgres Elephant (SQL), allowing for the user,
-              role and product tables to be related. User authentication managed
-              with Auth0. <br className="mt-2" />
-              The application has three levels of user roles: unregistered user
-              (view only), registered user (add and manage items, contact other
-              users) and site administrator (monitor and delete all product
-              entries and users). The different access/views allowed for each
-              level are protected.
-            </p>
-            <ProjectButton url="https://gumtree-swap.netlify.app/" />
-          </div>
-          <div className="hidden sm:block bg-background mx-10 rounded-lg">
-            <a
-              href="https://gumtree-swap.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="block m-auto text-center rounded-lg my-5"
-                src={productSwap}
-                alt="image of the h20h web application showing a question and multiple choice answers on blue text areas"
-              />
-            </a>
-          </div>
-        </article>
-        <article className="grid sm:grid-cols-2 m-6">
-          <div className="hidden sm:block bg-background mx-10 rounded-lg">
-            <a
-              href="https://blog-dk-e24eedc7b082.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="block m-auto text-center rounded-lg my-5"
-                src={blog}
-                alt="image of a blog web application showing the headign 'News!', text, and a features latest story about travel in Vietnam accompanied by a photo of terraced rice fields "
-              />
-            </a>
-          </div>
-
-          <div className="my-3 ms-5 relative md:top-1/2  md:-translate-y-1/4">
-            <h2 className="text-2xl font-light tracking-wide">
-              Multi-author blog site
-            </h2>
-            <p className="font-thin text-sm mt-4 mb-8 me-10">
-              A blog website where authors can log in and post articles. Authors
-              can edit or delete their entries, and unregistered site visitors
-              can search and read articles. This site was an exercise in Node.js
-              Express; both the back and front end are made using this framework
-              , the front using ejs template engine to create views.
-            </p>
-            <ProjectButton url="https://blog-dk-e24eedc7b082.herokuapp.com/" />
-          </div>
-        </article>
-        {/* <article className="grid sm:grid-cols-2 m-6">
-          <div className="hidden sm:block bg-background mx-10 rounded-lg">
-            <a
-              href="https://world-clock-dorian-kelly.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="block m-auto text-center rounded-lg my-5"
-                src={worldClock}
-                alt="image of the h20h web application showing a question and multiple choice answers on blue text areas"
-              />
-            </a>
-          </div>
-
-          <div className="my-3 ms-5 relative md:top-1/2  md:-translate-y-1/4">
-            <h2 className="text-2xl font-light tracking-wide">World Clock</h2>
-            <p className="font-thin text-sm mt-4 mb-8 me-10">
-              A world clock application built with HTML, CSS, Vanilla
-              JavaScript, Bootstrap and the Moment/ Moment Timezone APIs. View
-              the current time in the cities displayed on the homepage, or
-              select from a range of cities or your current location in the
-              dropdown menu.
-            </p>
-            <ProjectButton url="https://world-clock-dorian-kelly.netlify.app/" />
-          </div>
-        </article> */}
+        </h3>
+        <div className="mx-6 md:mx-10 md:my-16 my-10 flex flex-col gap-10 md:gap-16">
+          {projects.slice(0, 3).map((project, index) => (
+            <HomeProjectCard
+              key={project.id}
+              project={project}
+              gridReverse={index % 2 === 1}
+            />
+          ))}
+        </div>
       </section>
     </>
   );

@@ -5,12 +5,12 @@ import { Experience } from "../components/Experience";
 export const AboutPage = () => {
   return (
     <>
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 sm:mx-10 lg:mx-20">
-        <article className="lg:col-span-2">
-          <div className="mx-8 relative top-1/2 -translate-y-1/2 text-center">
-            <h1 className="md:mt-8 font-light tracking-widest mb-4 sm:mb-10 md:mb-4 text-2xl sm:text-4xl text-primary ">
-              About me
-            </h1>
+      <section className="sm:mx-10 lg:mx-20 flex flex-col gap-7 lg:gap-10">
+        <h1 className="font-light tracking-widest text-2xl sm:text-4xl text-primary text-center">
+          About me
+        </h1>
+        <article className="flex flex-col lg:flex-row gap-10">
+          <div className="w-full text-center flex gap-5 flex-col">
             <p className="font-thin">
               Hello, and thank you for visiting my website! Let me introduce
               myself. I am a passionate and driven full stack web developer
@@ -25,7 +25,7 @@ export const AboutPage = () => {
               adhering to best practices in documentation and version control,
               ensuring seamless collaboration and efficient project management.
             </p>
-            <p className="mt-4 font-thin">
+            <p className="font-thin">
               Alongside my technical expertise, I bring eight years of
               invaluable experience in project coordination and stakeholder
               relations across various sectors. These experiences have further
@@ -36,6 +36,14 @@ export const AboutPage = () => {
               communicate and thrive in multicultural settings.
             </p>
           </div>
+          <div className="flex items-center w-full justify-center">
+            <img
+              className="w-full rounded-xl max-w-lg"
+              src={dorian}
+              title="Dorian Kelly fullstack web developer"
+              alt="Close up of Dorian smiling, wearing a pink shirt, a world map and plant in background"
+            />
+          </div>
           {/* <a
             className="text-center font-thin text-primary hover:underline"
             href="https://www.linkedin.com/in/dorian-kelly/"
@@ -45,14 +53,6 @@ export const AboutPage = () => {
             LinkedIn
           </a> */}
         </article>
-        <div className="m-8 ">
-          <img
-            className="w-full rounded-xl max-w-xs block m-auto md:relative md:top-1/2 md:-translate-y-1/2 mt-6 md:mt-14 text-center"
-            src={dorian}
-            title="Dorian Kelly fullstack web developer"
-            alt="Close up of Dorian smiling, wearing a pink shirt, a world map and plant in background"
-          />
-        </div>
       </section>
       <section className="sm:mx-10 lg:mx-20">
         <Education />

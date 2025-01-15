@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ShowProjectButton } from "./ShowProjectButton";
 
-export const ProjectCard = ({ project }) => {
+export const ProjectCard = ({ project, gridReverse }) => {
   const { title, description, image, link, stack } = project;
   const [display, setDisplay] = useState("hidden");
 
@@ -15,13 +15,14 @@ export const ProjectCard = ({ project }) => {
           stack={stack}
         />
         <div
-          className={`${display} flex flex-col md:flex-row  lg:max-h-[12rem] md:mb-20`}
+          className={`${display} flex flex-col ${
+            gridReverse ? "md:flex-row-reverse" : "md:flex-row"
+          } gap-5 md:gap-16 lg:gap-26`}
         >
-          <div className="relative lg:me-10 md:max-w-[50%] mb-5 md:mb-0 max-h-fit">
-            <p className=" font-thin text-sm lg:me-10">{description}</p>
+          <div className="w-full flex items-center">
+            <p className=" font-thin text-sm align-middle">{description}</p>
           </div>
-
-          <div className="md:max-w-[50%] mx-auto rounded-lg  mb-10 md:mb-0  ">
+          <div className="w-full mx-auto rounded-lg">
             <a
               href={link}
               target="_blank"
@@ -29,18 +30,18 @@ export const ProjectCard = ({ project }) => {
               // className={`${display} flex  `}
               className="flex md:flex-row-reverse md:relative md:top-1/2 md:-translate-y-1/2"
             >
-              <div className="p-2 rounded-full h-40 w-40 md:w-48 hover:shadow  bg-background ">
+              <div className="p-2 rounded-full h-40 w-full hover:shadow  bg-background ">
                 <img
-                  className="object-cover  h-full  m-auto  rounded-full"
+                  className="object-cover  w-full h-full  m-auto  rounded-full"
                   src={image}
                   alt={title}
                 />
               </div>
-              <div className="md:me-5 lg:me-8 ms-8 md:ms-5">
+              {/* <div className="md:me-5 lg:me-8 ms-8 md:ms-5">
                 <p className="text-center relative top-1/2 -translate-y-1/2 text-primary font-thin hover:font-normal bg-background rounded-full px-3 py-1 shadow-lg">
                   View Project
                 </p>
-              </div>
+              </div> */}
             </a>
           </div>
         </div>

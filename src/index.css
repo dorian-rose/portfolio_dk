@@ -6,6 +6,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
 }
 
 .heroPosition {
@@ -22,8 +23,6 @@
 .max-w-projects {
   max-width: 1280px;
 }
-
-
 
 @media (min-width: 640px) {
   .heroHeight {
