@@ -1,85 +1,72 @@
-import React from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { NavBar } from "../components/NavBar";
+import { HomeProjectCard } from "../components/HomeProjectCard";
+import { projects } from "../components/projectInfo";
 import { ContactButton } from "../components/ContactButton";
-import Iframe from "react-iframe";
+import productSwap from "../assets/productSwap.png";
+import blog from "../assets/blog.png";
+import h2oh from "../assets/h2oh.png";
+
+import { ProjectButton } from "../components/ProjectButton";
+
+import { Stacks } from "../components/Stacks";
 
 export const HomePage = () => {
+  const info = useRef(null);
+  const scrollToInfo = () => {
+    info.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <section>
-        <article className="h-screen bg-background ">
-          <div className="relative top-1/3 -translate-y-1/2">
-            <p className="text-center font-thin">Hi, I'm</p>
-            <h1 className="m-10 font-light tracking-widest text-5xl sm:text-7xl text-center">
+        <article className="heroHeight bg-background">
+          <div className="relative top-1/2 -translate-y-1/2 pb-20 ">
+            {/* <div className="absolute heroPosition left-1/2 -translate-x-1/2"> */}
+            <p className="text-center font-thin ">Hi, I'm</p>
+            <h1 className="sm:m-10 m-6  font-light tracking-widest text-3xl sm:text-4xl md:text-6xl text-center">
               Dorian Kelly
             </h1>
-            <h2 className="font-light tracking-widest mt-4 mx-8 text-2xl sm:text-4xl text-center">
-              Front-end developer based in Spain
+            <h2 className="font-light tracking-widest mt-4 mx-8 text-xl sm:text-2xl md:text-4xl text-center">
+              Full-stack developer based in Spain
             </h2>
+            <Stacks />
             <ContactButton />
+            <button
+              onClick={scrollToInfo}
+              className="block m-auto mt-5 xl:mt-10 2xl:mt-20 font-thin tracking-wide w-fit py-1 px-2  text-primary rounded-md px-2 hover:shadow-lg"
+            >
+              <p>See more</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6 m-auto"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
         </article>
 
-        <p className="text-center font-thin mt-8">Featured Projects</p>
-        <div className="grid sm:grid-cols-2 mt-4 mx-4">
-          <div>
-            <a
-              href="https://flourishing-sable-f526bd.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Iframe
-                className="rounded-md border border-red-800"
-                url="https://flourishing-sable-f526bd.netlify.app"
-                width="100%"
-                height="100%"
-              />
-            </a>
-          </div>
-
-          <div className="m-3">
-            <h2 className="text-2xl font-light tracking-wide">World Clock</h2>
-            <p className="font-thin text-sm my-2">
-              A world clock application built with HTML, CSS, JavaScript,
-              Bootstrap and Moment/ Moment Timezone. View the current time in
-              the cities displayed on the homepage, or select from a range of
-              cities or your current location in the dropdown menu.
-            </p>
-            <a
-              title="view world clock"
-              href="https://world-clock-dorian-kelly.netlify.app/"
-              target="_blank"
-            >
-              View Project
-            </a>
-          </div>
-        </div>
-        <div>
-          <div>
-            <div>
-              <div>
-                <h2>Weather App</h2>
-                <p>
-                  A weather forecast application build with HTML, CSS, Vanilla
-                  JavaScript and using APIs. Select your current city, one of
-                  the cities displayed on the homepage or enter any city in the
-                  search bar. The app will display current temperature and seven
-                  day forecast for the chosen.
-                </p>
-                <a
-                  title="view weather app"
-                  href="https://weather-app-dorian-kelly.netlify.app/"
-                  target="_blank"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-            <div>
-              <img src="" title="weather app project" alt="world clock" />
-            </div>
-          </div>
+        <h3
+          className="font-thin tracking-widest pt-8 sm:py-8 text-primary text-xl sm:text-2xl md:text-3xl text-center"
+          ref={info}
+        >
+          Featured Projects
+        </h3>
+        <div className="mx-6 md:mx-10 md:my-16 my-10 flex flex-col gap-10 md:gap-16">
+          {projects.slice(0, 3).map((project, index) => (
+            <HomeProjectCard
+              key={project.id}
+              project={project}
+              gridReverse={index % 2 === 1}
+            />
+          ))}
         </div>
       </section>
     </>

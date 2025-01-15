@@ -6,4 +6,29 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.heroPosition {
+  top: calc(50vh - 183px);
+}
+
+.heroHeight {
+  height: calc(100vh - 132px);
+}
+.w-96 {
+  width: 96%;
+}
+
+.max-w-projects {
+  max-width: 1280px;
+}
+
+@media (min-width: 640px) {
+  .heroHeight {
+    height: calc(100vh - 148px);
+  }
+  /* .heroPosition {
+    top: calc(50vh - 246px);
+  } */
 }

@@ -1,56 +1,50 @@
 import React from "react";
+import { ContactButton } from "./ContactButton";
+import linkedin from "../assets/linkedin.svg";
+import github from "../assets/github.svg";
 
 export const Footer = () => {
   return (
-    <footer>
-      <div>
+    <footer className="mt-28">
+      <div className=" my-5 bg-background p-2 grid grid-cols-2">
         <div>
-          <h4>Work Inquiry</h4>
-          <p>Let's collaborate</p>
+          <h4 className="text-xl sm:text-2xl text-center font-light tracking-wide font-medium mt-10 ">
+            Work Inquiry
+          </h4>
+          <p className="font-thin mb-10 text-center">Let's collaborate</p>
         </div>
-        <div>
-          <a href="/contact.html" title="Get in touch with Dorian">
-            Contact Me
-          </a>
-        </div>
+        <ContactButton />
       </div>
 
       <div>
-        <a title="email Dorian Kelly" href="mailto:dorianrkelly@gmail.com">
+        <a
+          className="sm:text-2xl font-light tracking-wide block my-12 m-auto text-primary text-center hover:underline"
+          title="email Dorian Kelly"
+          href="mailto:dorianrkelly@gmail.com"
+          rel="noopener noreferrer"
+        >
           dorianrkelly@gmail.com
         </a>
       </div>
-      <div>
+      <div className="text-center mt-2 mb-16 flex justify-center">
         <a
-          title="Dorian's Twitter profile"
-          href="https://twitter.com/DorianKelly16"
-          target="_blank"
-        >
-          twitter
-        </a>
-        <a
+          className="mx-2 w-12 p-2 bg-background rounded-3xl"
           title="Dorian's Github profile "
           href="https://github.com/dorian-rose"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          github
+          <img src={github} alt="github logo" />
         </a>
         <a
+          className="mx-2 pt-3 px-3 w-12 p-2 bg-background rounded-3xl"
           title="Dorian's LinkedIn profile"
           href="https://www.linkedin.com/in/dorian-kelly-0785b0204/"
           target="_blank"
         >
-          linkedin
+          <img src={linkedin} alt="linked in logo" />
         </a>
       </div>
-      <p>
-        <small>
-          <a href="https://github.com/dorian-rose/dorian-kelly-portfolio">
-            Open-source code
-          </a>
-          by Dorian Kelly
-        </small>
-      </p>
     </footer>
   );
 };
